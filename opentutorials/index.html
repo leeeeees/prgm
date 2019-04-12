@@ -15,17 +15,15 @@
       target.style.backgroundColor ='black';
       target.style.color ='white';
       this.value='day';
-        while(i < aList.length){
-          aList[i].style.color = 'red';
-          i = i+1;
+      for(i=0; i < aList.length; i++){
+        aList[i].style.color = 'red';
       }
     } else{
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
       this.value = 'night';
-        while(i < aList.length){
-          aList[i].style.color = 'blue';
-          i = i+1;
+      for(i=0; i < aList.length; i++){
+        aList[i].style.color = 'blue';
       }
     }
   ">
