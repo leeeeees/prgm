@@ -14,6 +14,19 @@
       document.querySelector('body').style.backgroundColor='white';
       document.querySelector('body').style.color='black';
   ">
+  <input id="nightDay" type="button" value="night" onclick="
+    var handler = document.querySelector('#nightDay');
+    var target = document.querySelector('body');
+    if(handler.value==='night'){
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      handler.value='day';
+    } else{
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      handler.value='night';
+    }
+  ">
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
