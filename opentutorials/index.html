@@ -3,28 +3,7 @@
 <head>
   <title>WEB - Welcome</title>
   <meta charset="utf-8">
-  <script>
-    var nightHandler = function(n){
-      var target = document.querySelector('body');
-      var aList = document.querySelectorAll('a')
-      var i = 0
-      if(n.value ==='night'){
-        target.style.backgroundColor ='black';
-        target.style.color ='white';
-        n.value ='day';
-        for(i=0; i < aList.length; i++){
-          aList[i].style.color = 'red';
-        }
-      } else{
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
-        n.value = 'night';
-        for(i=0; i < aList.length; i++){
-          aList[i].style.color = 'blue';
-        }
-      }
-    }
-  </script>
+  <script src="function.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
