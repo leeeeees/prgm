@@ -14,17 +14,16 @@
       document.querySelector('body').style.backgroundColor='white';
       document.querySelector('body').style.color='black';
   ">
-  <input id="nightDay" type="button" value="night" onclick="
-    var handler = document.querySelector('#nightDay');
+  <input type="button" value="night" onclick="
     var target = document.querySelector('body');
-    if(handler.value==='night'){
+    if(this.value==='night'){
       target.style.backgroundColor='black';
       target.style.color='white';
-      handler.value='day';
+      this.value='day';
     } else{
       target.style.backgroundColor='white';
       target.style.color='black';
-      handler.value='night';
+      this.value='night';
     }
   ">
   <ol>
