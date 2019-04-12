@@ -3,33 +3,34 @@
 <head>
   <title>WEB - Welcome</title>
   <meta charset="utf-8">
+  <script>
+    var nightHandler = function(n){
+      var target = document.querySelector('body');
+      var aList = document.querySelectorAll('a')
+      var i = 0
+      if(n.value ==='night'){
+        target.style.backgroundColor ='black';
+        target.style.color ='white';
+        n.value ='day';
+        for(i=0; i < aList.length; i++){
+          aList[i].style.color = 'red';
+        }
+      } else{
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        n.value = 'night';
+        for(i=0; i < aList.length; i++){
+          aList[i].style.color = 'blue';
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
-    var target = document.querySelector('body');
-    var aList = document.querySelectorAll('a')
-    var i = 0
-
-    if(this.value ==='night'){
-      target.style.backgroundColor ='black';
-      target.style.color ='white';
-      this.value='day';
-      for(i=0; i < aList.length; i++){
-        aList[i].style.color = 'red';
-      }
-    } else{
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'night';
-      for(i=0; i < aList.length; i++){
-        aList[i].style.color = 'blue';
-      }
-    }
+    nightHandler(this);
   ">
-  <script>
-
-  </script>
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
