@@ -11,7 +11,6 @@ var body = {
   setColor:function(color){
     // document.querySelector('body').style.color = color;
     $("body").css("color", color);
-
   },
   setBackgroundColor:function(color){
     // document.querySelector('body').style.backgroundColor = color;
