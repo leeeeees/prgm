@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document_ex1</title>
+</head>
+<body>
+<script>
+  var n1 = {
+    "programmer" : "egoing",
+    "designer" : "leeche"
+  };
+  document.write("programmer : "+n1.programmer+"<br>");
+  n1.bookKeeper = "duru";
+  document.write("bookKeeper : "+n1.bookKeeper+ "<br>");
+  n1['data scientist'] = 'taeho';
+  document.write("data scientist : "+n1['data scientist']+ '<br>');
+  document.write(n1["programmer"]+'<br>');
+  for(var key in n1){
+    document.write(key+ " : "+n1[key]+'<br>');
+  }
+  var showAll = function(self){
+    for(var key in self){
+      document.write(key+ " : "+self[key]+'<br>');
+    }
+  }
+  showAll(n1);
+</script>
+
+</body>
+</html>
