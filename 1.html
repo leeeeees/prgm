@@ -1,18 +1,15 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB - html</title>
+  <title>WEB - Welcome</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="function.js"></script>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
   <input type="button" value="night" onclick="
-      document.querySelector('body').style.backgroundColor='black';
-      document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="day" onclick="
-      document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
+    nightHandler(this);
   ">
   <ol>
     <li><a href="1.html">HTML</a></li>
